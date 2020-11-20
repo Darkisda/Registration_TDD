@@ -1,0 +1,31 @@
+{
+  "name": "registration_tdd",
+  "version": "1",
+  "description": "A simple Registration System in TDD",
+  "main": "index.js",
+  "author": "Luan de Souza",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@types/jest": "^26.0.15",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
