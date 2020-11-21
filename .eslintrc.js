@@ -1,18 +1,27 @@
 module.exports = {
-    "env": {
-        "es2021": true,
-        "node": true
+    env: {
+        "es6": true,
     },
-    "extends": [
+    extends: [
         "airbnb-base",
-        "prettier"
+        "plugin:prettier/recommended"
     ],
-    "parser": "@babel/eslint-parser",
-    "parserOptions": {
-        "ecmaVersion": 12,
+    globals: {
+      Atomics: 'readonly',
+      SharedArrayBuffer: 'readonly',
+      __DEV__: 'readonly',
+    },
+    plugins: ["prettier"],
+    parser: "babel-eslint",
+    parserOptions: {
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "rules": {
-        'prettier/prettier': 'error',
+    rules: {
+        'prettier/prettier': ['error', { endOfLine: 'auto' }],
+        'import/prefer-default-export': 'off',
+        'no-undef': 'off',
+        'no-return-assign': 'off',
+        'array-callback-return': 'off'
     }
 };
