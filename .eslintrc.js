@@ -22,6 +22,8 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'no-undef': 'off',
         'no-return-assign': 'off',
-        'array-callback-return': 'off'
+        'array-callback-return': 'off',
+        'no-console': 'off',
+        'no-unused-vars': 'off'
     }
 };

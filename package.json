@@ -7,7 +7,10 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "bluebird": "^3.7.2",
+    "knex": "^0.21.12",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -28,6 +31,8 @@
   "scripts": {
     "test": "jest",
     "test:students": "jest ./__tests__/StudentTests",
-    "test:classroom": "jest ./__tests__/ClassroomTests"
+    "test:classroom": "jest ./__tests__/ClassroomTests",
+    "test:task": "jest ./__tests__/TaskTests",
+    "test:project": "jest ./__tests__/ProjectTests"
   }
 }
