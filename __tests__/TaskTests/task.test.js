@@ -5,7 +5,10 @@ import { TaskRepository } from '../../src/repositories/Task/task.repository';
 let taskrepo;
 
 describe('Tasks behavior', () => {
-  beforeEach(() => {
+  beforeEach(async () => {
+    await connection.migrate.rollback();
+    await connection.migrate.latest();
+    await connection.seed.run();
     taskrepo = new TaskRepository();
   });
 
