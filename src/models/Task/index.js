@@ -7,5 +7,5 @@ export default class Task {
 
   completed;
 
-  projectId;
+  project_id;
 }

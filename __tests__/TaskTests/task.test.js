@@ -18,7 +18,7 @@ describe('Tasks behavior', () => {
     const description = 'Another description of task recused';
     const duration = 60;
     const completed = false;
-    const projectId = 1;
+    const projectId = 2;
 
     return taskrepo
       .createTask(name, description, duration, completed, projectId)

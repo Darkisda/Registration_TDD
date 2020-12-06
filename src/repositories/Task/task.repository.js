@@ -47,9 +47,9 @@ export class TaskRepository {
         task.description = description;
         task.duration = duration;
         task.completed = completed;
-        task.projectId = projectId;
+        task.project_id = projectId;
 
-        await trx('taks').insert(task);
+        await trx('task').insert(task);
 
         await trx.commit();
 
